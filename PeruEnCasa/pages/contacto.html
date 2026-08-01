@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Perú en Casa</title>
+
+    <link rel="stylesheet"
+    href="../assets/css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    </head>
+
+    <body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+    <div class="container header-container">
+
+    <a href="inicio.html" class="logo">
+
+    <img src="../assets/img/logo/logoperu.png">
+
+    <span>Perú en Casa</span>
+
+    </a>
+
+    <nav class="navbar">
+
+    <ul class="nav-links">
+
+    <li>
+        <a href="inicio.html">Inicio</a>
+    </li>
+
+    <li>
+        <a href="catalogo.html">Catálogo</a>
+    </li>
+
+    <li>
+        <a href="contacto.html">Contacto</a>
+    </li>
+
+    <li>
+        <a href="nosotros.html">Nosotros</a>
+    </li>
+
+    </ul>
+
+    </nav>
+
+    <div class="search-box">
+
+    <input
+    type="text"
+    id="buscarCatalogo"
+    placeholder="Buscar productos...">
+
+    <button>
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+</div>
+
+    <div class="header-icons">
+
+        <a href="misfavoritos.html" class="header-icon" title="Favoritos">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </a>
+
+        <a href="carrito.html" class="header-icon cart-icon" title="Carrito">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span class="cart-count">
+
+                0
+
+            </span>
+
+        </a>
+
+        <a href="#" id="linkCuenta" class="header-icon" title="Mi cuenta">
+
+            <i class="fa-regular fa-circle-user"></i>
+
+        </a>
+
+    </div>
+
+    </div>
+
+    </header>
+    <main class="container">
+
+    <!-- HERO -->
+
+    <section class="contacto-hero">
+
+        <div class="contacto-icono">
+
+            <i class="fa-solid fa-envelope"></i>
+
+        </div>
+
+        <h1>Contáctanos</h1>
+
+        <p>
+
+            ¿Tienes alguna consulta, sugerencia o necesitas ayuda?
+            Estaremos encantados de atenderte.
+
+        </p>
+
+    </section>
+
+    <!-- CONTENIDO -->
+
+    <section class="contacto-grid">
+
+        <!-- FORMULARIO -->
+
+        <div class="contacto-card">
+
+            <h2>Envíanos un mensaje</h2>
+
+            <form id="formContacto">
+
+                <div class="form-group">
+
+                    <label>Nombre</label>
+
+                    <input
+                        type="text"
+                        id="nombreContacto"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Correo electrónico</label>
+
+                    <input
+                        type="email"
+                        id="correoContacto"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Asunto</label>
+
+                    <input
+                        type="text"
+                        id="asuntoContacto"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Mensaje</label>
+
+                    <textarea
+                        id="mensajeContacto"
+                        rows="6"
+                        required></textarea>
+
+                </div>
+
+                <button
+                    class="btn btn-primary"
+                    type="submit">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Enviar mensaje
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- INFORMACIÓN -->
+
+        <div class="contacto-info">
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Dirección</h3>
+
+                <p>
+
+                    Lima, Perú
+
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <h3>Teléfono</h3>
+
+                <p>
+
+                    +51 924302433
+
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>Correo</h3>
+
+                <p>
+
+                    1695975@senati.pe
+
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>Horario</h3>
+
+                <p>
+
+                    Lunes - Viernes
+
+                    <br>
+
+                    9:00 am - 6:00 pm
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MAPA -->
+
+    <section class="mapa-contacto">
+
+        <h2>Nuestra ubicación</h2>
+
+        <p>
+
+            Puedes visitarnos o comunicarte con nosotros.
+
+        </p>
+
+        <div class="mapa-frame">
+
+            <iframe
+                src="https://www.google.com/maps?q=SENATI%20Independencia%20Lima&output=embed"
+                width="100%"
+                height="450"
+                style="border:0;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <br><br>
+
+    </section>
+
+</main>
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <h3>Perú en Casa</h3>
+
+                <p>
+
+                    Artesanías auténticas de la costa, sierra y selva peruana.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Enlaces</h3>
+
+                <ul>
+
+                    <li><a href="inicio.html">Inicio</a></li>
+
+                    <li><a href="catalogo.html">Catálogo</a></li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+
+                    <li><a href="contacto.html">Contacto</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Contacto</h3>
+
+                <p>Lima - Perú</p>
+
+                <p>1695975@senati.pe</p>
+
+                <p>+51 924302433</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-copy">
+
+            © 2026 Perú en Casa | Todos los derechos reservados.
+
+        </div>
+
+    </footer>
+
+        <script src="../assets/js/productos.js"></script>
+        <script src="../assets/js/ui.js"></script>
+        <script src="../assets/js/favoritos.js"></script>
+        <script src="../assets/js/carrito.js"></script>
+        <script src="../assets/js/auth.js"></script>
+        <script src="../assets/js/buscador.js"></script>
+        <script src="../assets/js/contacto.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo | Perú en Casa</title>
+
+    <link rel="stylesheet"
+    href="../assets/css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    </head>
+
+    <body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+    <div class="container header-container">
+
+    <a href="inicio.html" class="logo">
+
+    <img src="../assets/img/logo/logoperu.png">
+
+    <span>Perú en Casa</span>
+
+    </a>
+
+    <nav class="navbar">
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="inicio.html">Inicio</a>
+        </li>
+
+        <li>
+            <a href="catalogo.html">Catálogo</a>
+        </li>
+
+        <li>
+            <a href="contacto.html">Contacto</a>
+        </li>
+
+        <li>
+            <a href="nosotros.html">Nosotros</a>
+        </li>
+
+    </ul>
+
+    </nav>
+
+    <div class="search-box">
+
+    <input
+    type="text"
+    id="buscarCatalogo"
+    placeholder="Buscar productos...">
+
+    <button>
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+</div>
+
+    <div class="header-icons">
+
+        <a href="misfavoritos.html" class="header-icon" title="Favoritos">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </a>
+
+        <a href="carrito.html" class="header-icon cart-icon" title="Carrito">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span class="cart-count">
+
+                0
+
+            </span>
+
+        </a>
+
+        <a href="#" id="linkCuenta" class="header-icon" title="Mi cuenta">
+
+            <i class="fa-regular fa-circle-user"></i>
+
+        </a>
+
+    </div>
+
+    </div>
+
+    </header>
+    <main class="catalogo">
+
+        <div class="container">
+
+            <h1 class="titulo-catalogo">
+                Catálogo
+            </h1>
+
+            <p class="subtitulo">
+                Descubre artesanías de todas las regiones del Perú.
+            </p>
+
+            <button class="btn-filtros" id="btnFiltros">
+
+                <i class="fa-solid fa-sliders"></i>
+
+                Filtros
+
+            </button>
+
+            <div class="catalogo-layout">
+
+                <!-- ================= FILTROS ================= -->
+
+                <aside class="sidebar" id="sidebarFiltros">
+
+                    <h2>Filtros</h2>
+
+                    <div class="filtro">
+
+                        <h3>Categoría</h3>
+
+                        <label>
+                            <input type="radio" name="categoria" value="Todos" checked>
+                            <span>Todos</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="categoria" value="Artesanías">
+                            <span>Artesanías</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="categoria" value="Decoración">
+                            <span>Decoración</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="categoria" value="Textiles">
+                            <span>Textiles</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="categoria" value="Instrumentos">
+                            <span>Instrumentos</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="categoria" value="Cerámica">
+                            <span>Cerámica</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="categoria" value="Joyería">
+                            <span>Joyería</span>
+                        </label>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="filtro">
+
+                        <h3>Región</h3>
+
+                        <label>
+                            <input type="radio" name="region" value="Todas" checked>
+                            Todas
+                        </label>
+
+                        <label>
+                            <input type="radio" name="region" value="Costa">
+                            Costa
+                        </label>
+
+                        <label>
+                            <input type="radio" name="region" value="Sierra">
+                            Sierra
+                        </label>
+
+                        <label>
+                            <input type="radio" name="region" value="Selva">
+                            Selva
+                        </label>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="filtro">
+
+                        <h3>Ordenar por</h3>
+
+                        <select id="ordenar">
+
+                            <option value="nombre">
+                                Nombre (A-Z)
+                            </option>
+
+                            <option value="precioAsc">
+                                Precio: menor a mayor
+                            </option>
+
+                            <option value="precioDesc">
+                                Precio: mayor a menor
+                            </option>
+
+                            <option value="rating">
+                                Mejor valorados
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </aside>
+
+                <!-- ================= PRODUCTOS ================= -->
+
+                <section class="catalogo-productos">
+
+                    <div class="resultado-catalogo">
+
+                        <span id="totalProductos">
+                            Mostrando productos...
+                        </span>
+
+                    </div>
+
+                    <div
+                        id="contenedorCatalogo" class="products-grid">
+                    </div>
+                    <div id="sinResultados" class="sin-resultados">
+                    <div class="sin-resultados-icono">🔍</div>
+
+        <h2>No se encontraron productos</h2>
+
+        <p>
+            Prueba con otro nombre o cambia los filtros seleccionados.
+        </p>
+
+    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <h3>Perú en Casa</h3>
+
+                <p>
+
+                    Artesanías auténticas de la costa, sierra y selva peruana.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Enlaces</h3>
+
+                <ul>
+
+                    <li><a href="inicio.html">Inicio</a></li>
+
+                    <li><a href="catalogo.html">Catálogo</a></li>
+
+                    <li><a href="nosotros.html">Nosotros</a></li>
+
+                    <li><a href="contacto.html">Contacto</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Contacto</h3>
+
+                <p>Lima - Perú</p>
+
+                <p>1695975@senati.pe</p>
+
+                <p>+51 924302433</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-copy">
+
+            © 2026 Perú en Casa | Todos los derechos reservados.
+
+        </div>
+
+    </footer>
+
+        <script src="../assets/js/productos.js"></script>
+        <script src="../assets/js/ui.js"></script>
+        <script src="../assets/js/favoritos.js"></script>
+        <script src="../assets/js/carrito.js"></script>
+        <script src="../assets/js/auth.js"></script>
+        <script src="../assets/js/catalogo.js"></script>
+        <script src="../assets/js/buscador.js"></script>
+        <script src="../assets/js/filtros.js"></script>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrito | Perú en Casa</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header id="header"></header>
+
+<section class="breadcrumb">
+    <div class="container">
+
+        <a href="inicio.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+
+        <span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </span>
+
+        <span class="actual">
+            Carrito
+        </span>
+
+    </div>
+</section>
+
+<main class="container carrito-page">
+
+    <div id="carritoVacio" class="empty-state">
+
+    </div>
+
+    <div class="carrito-layout">
+
+    <section id="listaCarrito"
+             class="lista-carrito">
+    </section>
+
+    <aside class="resumen-compra">
+
+       <h2>Resumen de compra</h2>
+
+<div class="resumen-linea">
+    <span>Productos</span>
+    <span id="cantidadProductos">0</span>
+</div>
+
+<div class="resumen-linea">
+    <span>Subtotal</span>
+    <span id="subtotalCarrito">S/ 0.00</span>
+</div>
+
+<div class="resumen-linea">
+    <span>Envío</span>
+    <span class="gratis">Gratis</span>
+</div>
+
+<div class="resumen-linea">
+    <span>Descuento</span>
+    <span id="descuentoCarrito">
+
+    S/ 0.00
+
+</span>
+</div>
+
+<div class="cupon">
+
+    <label for="codigoCupon">
+
+        Código promocional
+
+    </label>
+
+    <div class="cupon-input">
+
+        <input
+            type="text"
+            id="codigoCupon"
+            placeholder="Ej. PERU10">
+
+        <button id="btnAplicarCupon">
+
+            Aplicar
+
+        </button>
+
+    </div>
+
+    <small id="mensajeCupon"></small>
+
+</div>
+
+<hr>
+
+<div class="resumen-linea total">
+    <strong>Total</strong>
+    <strong id="totalCarrito">S/ 0.00</strong>
+</div>
+
+<div class="beneficios">
+
+    <p>🔒 Pago 100% seguro</p>
+
+    <p>🚚 Envíos a todo el Perú</p>
+
+    <p>↩️ Cambios y devoluciones</p>
+
+</div>
+
+<button id="btnFinalizar" class="buy-btn">
+
+    Finalizar compra
+
+</button>
+
+<button id="btnVaciar" class="view-btn">
+
+    Vaciar carrito
+
+</button>
+
+    </aside>
+
+</div>
+
+<section class="relacionados-carrito">
+
+    <h2>También te puede interesar</h2>
+
+    <div id="productosRecomendados"
+         class="products-grid">
+
+    </div>
+
+</section>
+
+</main>
+
+<footer id="footer"></footer>
+
+
+    <!-- Modal compra realizada -->
+
+    <div id="modalCompra" class="modal-compra">
+
+        <div class="modal-compra-contenido">
+
+            <div class="check-compra">
+
+                ✓
+
+            </div>
+
+            <h2>¡Gracias por tu compra!</h2>
+
+            <p>Tu pedido ha sido registrado correctamente.</p>
+
+        <p id="numeroPedido"></p>
+
+        <button id="btnSeguirComprando" class="buy-btn">
+
+            Seguir comprando
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="../assets/js/productos.js"></script>
+<script src="../assets/js/ui.js"></script>
+<script src="../assets/js/favoritos.js"></script>
+<script src="../assets/js/carrito.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perú en Casa | Artesanías y Productos Peruanos</title>
+
+    <meta
+        name="description"
+        content="Descubre artesanías, souvenirs y productos representativos del Perú en una tienda moderna inspirada en nuestra cultura.">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container header-container">
+
+    <a href="inicio.html" class="logo">
+
+    <img src="../assets/img/logo/logoperu.png">
+
+    <span>Perú en Casa</span>
+
+    </a>
+
+    <nav class="navbar">
+
+    <ul class="nav-links">
+
+    <li>
+        <a href="inicio.html">Inicio</a>
+    </li>
+
+    <li>
+        <a href="catalogo.html">Catálogo</a>
+    </li>
+
+    <li>
+        <a href="contacto.html">Contacto</a>
+    </li>
+
+    <li>
+        <a href="nosotros.html">Nosotros</a>
+    </li>
+
+    </ul>
+
+    </nav>
+
+    <div class="search-box">
+
+    <input
+    type="text"
+    id="buscarCatalogo"
+    placeholder="Buscar productos...">
+
+    <button>
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+</div>
+
+    <div class="header-icons">
+
+        <a href="misfavoritos.html" class="header-icon" title="Favoritos">
+
+            <i class="fa-regular fa-heart"></i>
+
+        </a>
+
+        <a href="carrito.html" class="header-icon cart-icon" title="Carrito">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span class="cart-count">
+
+                0
+
+            </span>
+
+        </a>
+
+        <a href="#" id="linkCuenta" class="header-icon" title="Mi cuenta">
+
+            <i class="fa-regular fa-circle-user"></i>
+
+        </a>
+
+    </div>
+
+    </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="hero-tag">
+                        Productos auténticos del Perú
+                    </span>
+
+                    <h1>
+                        Descubre la riqueza cultural del Perú desde un solo lugar.
+                    </h1>
+
+                    <p>
+
+                        Encuentra artesanías, ropa típica, accesorios,
+                        recuerdos y mucho más. Apoyamos a productores
+                        locales llevando su talento a todo el país.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="catalogo.html" class="btn btn-primary">
+
+                            Explorar catálogo
+
+                        </a>
+
+                        <a href="#destacados" class="btn btn-secondary">
+
+                            Ver productos
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+
+                    <img
+                        src="../assets/img/banner/bannercosta.jpg"
+                        alt="Costa del Perú">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CATEGORÍAS ================= -->
+
+<section class="categories">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Explora por categoría</h2>
+
+            <p>
+                Descubre la diversidad de artesanías peruanas.
+            </p>
+
+        </div>
+
+        <div class="categories-grid">
+
+            <div class="category-card">
+                <div class="category-icon">🏺</div>
+                <h3>Cerámica</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🧣</div>
+                <h3>Textiles</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🎁</div>
+                <h3>Souvenirs</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🎭</div>
+                <h3>Artesanías</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🎵</div>
+                <h3>Instrumentos</h3>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🏡</div>
+                <h3>Decoración</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- ================= PRODUCTOS DESTACADOS ================= -->
+
+<section id="destacados" class="featured">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Productos destacados</h2>
+
+            <p>
+                Una selección de nuestros productos más populares.
+            </p>
+
+        </div>
+
+        <div
+            class="products-grid"
+            id="productosDestacados">
+
+        </div>
+
+        <div class="ver-mas-catalogo">
+
+            <a href="catalogo.html" class="btn btn-primary">
+
+                Ver catálogo completo
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+        <!-- ================= BENEFICIOS ================= -->
+
+<section class="benefits">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>¿Por qué elegir Perú en Casa?</h2>
+
+            <p>
+
+                Llevamos lo mejor del Perú hasta la puerta de tu hogar.
+
+            </p>
+
+        </div>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">🚚</div>
+
+                <h3>Envíos a todo el Perú</h3>
+
+                <p>
+
+                    Realizamos envíos rápidos y seguros a nivel nacional.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">🔒</div>
+
+                <h3>Compra Segura</h3>
+
+                <p>
+
+                    Tus pagos estarán protegidos con procesos seguros.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">🏺</div>
+
+                <h3>Productos Artesanales</h3>
+
+                <p>
+
+                    Trabajamos con artesanos peruanos y productos auténticos.
+
+                </p>
+
+            </div>
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">❤️</div>
+
+                <h3>Apoyamos el talento local</h3>
+
+                <p>
+
+                    Cada compra ayuda al crecimiento de emprendedores peruanos.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>Perú en Casa</h3>
+
+            <p>
+
+                Artesanías auténticas de la costa, sierra y selva peruana.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Enlaces</h3>
+
+            <ul>
+
+                <li><a href="inicio.html">Inicio</a></li>
+
+                <li><a href="catalogo.html">Catálogo</a></li>
+
+                <li><a href="nosotros.html">Nosotros</a></li>
+
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Contacto</h3>
+
+            <p>Lima - Perú</p>
+
+            <p>1695975@senati.pe</p>
+
+            <p>+51 924302433</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-copy">
+
+        © 2026 Perú en Casa | Todos los derechos reservados.
+
+    </div>
+
+</footer>
+
+    <script src="../assets/js/productos.js"></script>
+    <script src="../assets/js/ui.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/favoritos.js"></script>
+    <script src="../assets/js/carrito.js"></script>
+    <script src="../assets/js/auth.js"></script>
+    <script src="../assets/js/slider.js"></script>
+    <script src="../assets/js/modal.js"></script>
+    <script src="../assets/js/buscador.js"></script>
+    <script src="../assets/js/header.js"></script>
+
+    <div id="modalProducto" class="modal"></div>
+
+</body>
+</html>
